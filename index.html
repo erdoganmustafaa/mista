@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Deniz Manzaralı Sayfalar</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #ffe6e6;
+      overflow-x: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    #backgroundVideo {
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      object-fit: cover;
+      z-index: -1;
+      filter: brightness(0.4);
+
+    }
+
+    .page {
+      display: none;
+      text-align: center;
+      width: 80%;
+      max-width: 600px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.2);
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.85);
+      margin: 100px 0 40px;
+      z-index: 2;
+    }
+
+    .page.visible {
+      display: block;
+      animation: fadeIn 1s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .page img {
+      max-width: 100%;
+      max-height: 400px;
+      border-radius: 10px;
+    }
+
+    .page p {
+      margin-top: 20px;
+      line-height: 1.6;
+      text-align: center;
+    }
+
+    #nextButton {
+      margin: 20px 0 60px;
+      padding: 12px 28px;
+      font-size: 18px;
+      font-weight: bold;
+      background: linear-gradient(to right, #ff758c, #ff7eb3);
+      color: white;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      transition: all 0.3s ease;
+      z-index: 3;
+    }
+
+    #nextButton:hover {
+      background: linear-gradient(to right, #ff7eb3, #ff758c);
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+<!-- Arka plan video -->
+<video autoplay muted loop id="backgroundVideo">
+  <source src="https://cdn.pixabay.com/vimeo/577252427/ocean-88375.mp4?width=1280&hash=73ebeb30c1910d25d3c03472ee32594d81273f7b" type="video/mp4">
+  Tarayıcınız video arka planı desteklemiyor
+</video>
+
+<!-- Sayfalar -->
+<div id="page1" class="page visible">
+  <p>
+    Sevgilim, Herşeyim, Haziranım, Hayatımın anlamı..<br><br>
+    Bu çalışmayı bazı anılarımızı ölümsüzleştirmek için yaptım.<br><br>
+    Umarım beğenirsin.. İzlemek için başlat bakalım.. :) <br><br>
+    <b>Not: Her okuduğun sayfadan sonra diğerini görmek için butona tıklaa :)</b>
+  </p>
+</div>
+
+<div id="page2" class="page">
+  <img src="https://i.ibb.co/G4b4pxnR/ilk-foto.jpg" alt="Deniz Manzarası 2">
+  <p>
+    Tarih: 11 Ağustos 2024 Pazar günü...<br><br>
+    Evet her şey bugün ile başladı. İlk fotoğrafımız ve ikimiz de çok heyecanlıyız 😍<br><br>
+    O kadar heyecanlıyız ki senin çantan bende kalmış fark etmemişiz bile hahaha :)<br><br>
+    Hadi diğerine geç bakalım benim dünyalar güzeli sevgilim ❤️
+  </p>
+</div>
+
+<!-- Diğer sayfalar -->
+<div id="page3" class="page">
+  <img src="https://i.ibb.co/rf0Pz3gp/omuza-yasland-g.jpg" alt="Deniz Manzarası 3">
+  <p>
+    Evet ilk sinemamız ve first kiss olduğu yer.. Benim için asla unutulmayacak bir andı🥰<br><br>
+    Burada seni öptüğümde içimde çok tuhaf bir elektriklenme olmuştu asla unutamayacağım bir andı benim herşeyim❤️
+  </p>
+</div>
+
+<div id="page4" class="page">
+  <img src="https://i.ibb.co/SSRxPCN/foto1.jpg" alt="Deniz Manzarası 4">
+  <p>
+    Eveet beraber ilk yemeğimiz😍<br> Veeee o meşhur <b>"Tam hayalimde ki kız yav"</b> cümlesi hahahaha😘😘
+  </p>
+</div>
+
+<div id="page5" class="page">
+  <img src="https://i.ibb.co/0p3Y073y/kalpli.jpg" alt="Deniz Manzarası 5">
+  <p>
+    Bunu unutacağımı mı sandın? 😏😏 Aslaaa🙃 <br>
+    İlk kafeye gittiğimiz ve ilk tatlımızı yediğimiz yer.. 😍😍<br>
+    Ve ardından hadi parkta öp beni dediğin o mükemmel an hahahahaa❤️❤️
+  </p>
+</div>
+
+<div id="page6" class="page">
+  <img src="https://i.ibb.co/svLdBWYt/foto3.jpg" alt="Deniz Manzarası 6">
+  <p>
+      Açık konuşmak gerekirse yaklaşık 20-25 dakika burada seni beklemiştim hahaha😍<br>
+      Ama bir laf vardır<br><b>"Beklenen güzelse beklemek,özlenen güzelse özlemek güzeldir"❤️</b><br>
+      Seni sonsuza kadar bekleyebilirdim canım sevgilim😍😍
+
+  </p>
+</div>
+
+<div id="page7" class="page">
+  <img src="https://i.ibb.co/5hCBSYmr/parkta-kiss.jpg" alt="Deniz Manzarası 6">
+  <p>
+      Vee ilk buluşmanın son günü.. <br>
+      Bugün ikimizde biraz buruk ve üzgündük çünkü 2 gün harika geçmişti ve ardından senden ayrılmak açıkçası üzmüştü😢<br><br>
+      Ama artık kendimden emindim bu kız benim gelecekte ki eşim olacak demiştim kendime ve o benden ayrılmadığı sürece ayrılmayacağıma kendime söz vermiştim.❤️❤️
+  </p>
+</div>
+<div id="page8" class="page">
+  <img src="https://i.ibb.co/b5VchSd9/foto4.jpg" alt="Deniz Manzarası 6">
+  <p>
+      Çok uzun bir aradan sonra tekrar buluşma.. <br>Çok kötü anlarımızı geçirdiğimiz bir süreçti😢<br>
+      Burada artık birbirimizi o kadar özlemiştik ki birbirimizin dibinden ayrılmıyorduk😍😍<br>
+      
+  </p>
+</div>
+<div id="page9" class="page">
+  <img src="https://i.ibb.co/VKhw7KK/foto5.jpg" alt="Deniz Manzarası 6">
+  <p>
+      Yine kahvaltı sonrası çekilmiş bir fotoğraf🥰🥰 <br>Yüzümüzde ki mutluluk o kadar saf ki asla ayrılmak istemiyoruz❤️<br>
+      
+      
+  </p>
+</div>
+<div id="page10" class="page">
+  <img src="https://i.ibb.co/fzDCbPy3/giderken-foto.jpg" alt="Deniz Manzarası 6">
+  <p>
+      Evet 2.buluşmanın da sonu gelmişti burada😢😢 <br><br>Gitmeni istemiyorum diye omzuma yattığın anı asla unutmayacağım sevgilim❤️<br><br> 
+      Ama artık burada duygularımız artık çok birbirine geçmişti ve fark ettik ki gördükçe daha fazla özlüyoruz😍😍
+  </p>
+</div>
+<div id="page11" class="page">
+  <img src="https://i.ibb.co/cXLgpPr3/son-evde-sar-ld-g.jpg" alt="Deniz Manzarası 6">
+  <p>
+      2.5 aylık bir aranın ardından bu sefer çok güzel geçecek bir 16 günlük serüvenin 1.günüydü❤️<br><br>
+      O kadar candan içten bana sarılmışsın ki sanki içime girmek istiyor gibi😍😍<br> 
+      
+  </p>
+</div>
+<div id="page12" class="page">
+  <img src="https://i.ibb.co/RGjFX7gB/foto7.jpg alt="Deniz Manzarası 6">
+  <p>
+      O meşhur kahvaltılarımızdan bir gün daha ❤️<br><br>
+      Seninle kahvaltı hazırlamak o kadar güzel geliyordu ki sevgilim önüme her şeyi serseler böyle mutluluk hissedemezdim.❤️❤️<br> <br> 
+      Sen benim içimde ki çocuğu tekrar canlandırdın birtanem❤️❤️
+  </p>
+</div>
+<div id="page13" class="page">
+  <img src="https://i.ibb.co/Q70F79ZT/yatakta-sar-ld-g.jpg alt="Deniz Manzarası 6">
+  <p>
+      Hep kahvaltı resimleri mi olacak?😏<br><br>
+      Biraz da beraber huzurla uyuduğumuz<br><b>(Özür dilerim horlayıp seni uyutmadığım🤣)</b> anları görelim hahaha😍😍<br> <br> 
+      
+  </p>
+</div>
+<div id="page14" class="page">
+  <img src="https://i.ibb.co/mVY6SV9f/yatakta-uyudugu.jpg alt="Deniz Manzarası 6">
+  <p>
+      Benim herşeyim canımın içi kurban olduğum..<br><br>
+      Nasıl da güzel uyuyorsun öyle😍😍<br><br> 
+      İtiraf etmek gerekirse burada uyanmaman için çok çabalamıştım telefonu zar zor kaldırıp fotoğraf çekmiştim hahaha❤️
+      
+  </p>
+</div>
+<div id="page15" class="page">
+  <img src="https://i.ibb.co/KxNZLXTZ/mutfakta-yemek.jpg alt="Deniz Manzarası 6">
+  <p>
+      Benim canım sevgilimm ❤️<br><br>
+      Seninle yemek yapmak kahvaltı hazırlamak hayatımda yaptığım hisssettiğim en keyifli akvitelerden birisi😍😍<br><br> 
+      
+  </p>
+</div>
+<div id="page16" class="page">
+  <img src="https://i.ibb.co/YT4P6Mft/giderken-son.jpg alt="Deniz Manzarası 6">
+  <p>
+      Evet 16 günlük serüvenin sonu😢😢<br><br>
+      Burada hastaydın ve çok halsizdin bu yüzden seni yanıma getirmedim sevgilim😢😢<br><br> 
+      Ama bu bir son değil sadece önümüzde ki günlerde gerçekleşecek olan olayların başlangıcı bir tanem❤️
+      
+  </p>
+</div>
+<div id="page17" class="page">
+  <img src="https://i.ibb.co/TqDxnfSb/evde-sar-ld-g.jpg alt="Deniz Manzarası 6">
+  <p>
+      Benim küçük prensesim,aşkım, hayatımın anlamı..<br><br>
+      Bu sürprizime burada bu sayfa ile son verirken seni her gün her saat her dakika her saniye daha çok seviyorum.<br><br> 
+      Ömrüm yettiği sürece ne olursa olsun seni asla bırakmayacağım ben seni kendi canımdan çok seviyorum sevgilim❤️<br><br> 
+      Biz o kadar çok zorluk aştık ki seninle kimse inanamaz. Tüm zorluklara rağmen bizden vazgeçmediğin için sana minnettarım.<br><br>
+      Sözlerime burada son verirken senin hayatıma giren en mükemmel şey olduğunu söylemek istiyorum. Sen benim için tarifi eşsiz bir parçasın.<br>
+      Seni herkesten herşeyden çok seviyorum bunu asla unutma herşeyim iyi ki varsın iyi ki benimsin.😍😍😍😍❤️❤️❤️❤️
+  </p>
+</div>
+
+<!-- Buton -->
+<button id="nextButton">Sonraki</button>
+
+<!-- Müzik -->
+<audio id="backgroundMusic" loop>
+  <source src="https://media.vocaroo.com/mp3/1cnOnBkyhkFO" type="audio/mpeg">
+  Tarayıcınız ses etiketini desteklemiyor.
+</audio>
+
+<script>
+  const pages = ["page1", "page2", "page3", "page4", "page5", "page6", "page7","page8","page9","page10","page11","page12","page13","page14","page15","page16","page17"];
+  let currentPage = 0;
+  let musicStarted = false;
+
+  function showPage(index) {
+    pages.forEach((id, i) => {
+      const page = document.getElementById(id);
+      page.classList.remove("visible");
+      if (i === index) {
+        page.classList.add("visible");
+      }
+    });
+  }
+
+  document.getElementById("nextButton").addEventListener("click", () => {
+    if (!musicStarted) {
+      const music = document.getElementById("backgroundMusic");
+      music.volume = 0.6;
+      music.play();
+      musicStarted = true;
+    }
+
+    currentPage = (currentPage + 1) % pages.length;
+    showPage(currentPage);
+  });
+
+  showPage(currentPage);
+</script>
+
+</body>
+</html>
